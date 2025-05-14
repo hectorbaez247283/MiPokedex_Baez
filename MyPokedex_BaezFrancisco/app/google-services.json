@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303666225222",
+    "project_id": "mypokedex-baezfrancisco",
+    "storage_bucket": "mypokedex-baezfrancisco.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303666225222:android:15637a7811581d785eaa47",
+        "android_client_info": {
+          "package_name": "baez.francisco.mypokedex_baezfrancisco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7gylU8vu3y2UL_VgycF0WRTG11pJmVII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

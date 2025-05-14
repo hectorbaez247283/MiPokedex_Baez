@@ -3,52 +3,93 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterPokemonActivity">
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RegisterPokemon">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Pokemon"
-        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"/>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="8dp"
+        android:background="@color/bone"/>
+
     <EditText
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="35dp"
-        android:id="@+id/pokemonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/pokemonName"
+        android:textColor="@color/bone"
+        android:hint="Nombre de tu Pokémon"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="25dp"
         android:inputType="text"/>
 
     <EditText
-        android:layout_marginTop="25dp"
-        android:layout_marginHorizontal="25dp"
-        android:id="@+id/pokemonNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:id="@+id/pokemonNumber"
+        android:textColor="@color/bone"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="Número de la Pokedex"/>
 
     <ImageView
         android:id="@+id/thumbnail"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:layout_gravity="center"/>
+        android:background="@color/goldust"
+        android:padding="10dp" />
+
     <Button
         android:id="@+id/selectImage"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Select Image"
+        android:text="Select image"
+        android:backgroundTint="@color/raw"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/metagross"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/pizarra"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/infoPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=":/" />
+
     <Button
+        android:id="@+id/savePokemon"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="Save Pokemon"
+        android:backgroundTint="@color/smackdown"
+        android:text="Save pokemon"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:id="@+id/savePokemon"/>
+        android:layout_marginTop="20dp"/>
+
 </LinearLayout>

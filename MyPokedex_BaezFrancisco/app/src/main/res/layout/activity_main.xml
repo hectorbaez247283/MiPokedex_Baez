@@ -6,29 +6,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/bone"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My Pokedex"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:textSize="25sp"
-        />
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="8dp"
+        android:background="@color/bone"/>
+
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginTop="30dp"
         android:id="@+id/pokemonList"
-        />
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/smackdown"/>
+
+    <View
+        android:layout_width="400dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_height="8dp"
+        android:background="@color/white"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Register Pokemon"
-        android:layout_marginTop="25dp"
+        android:text="Register pokemon"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:id="@+id/addPokemon"/>
+        android:backgroundTint="@color/raw"
+        android:id="@+id/addPokemon" />
 
 </LinearLayout>
